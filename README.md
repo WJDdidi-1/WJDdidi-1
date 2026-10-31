@@ -39,7 +39,18 @@ npx dsh-plugin-toolkit verify .       # will this plugin actually install?
 ## Elsewhere
 
 - Personal site: **[wjddidi-1.github.io](https://wjddidi-1.github.io)**
-- Coursework and older experiments are public too — robotics, graph ML, network
-  simulation — each with the README saying what is real and what was never finished.
+
+## Coursework and older projects
+
+Public, and each README separates what runs from what was never finished:
+
+| Project | What it is | State |
+| --- | --- | --- |
+| [Smart-Robotic-Car-with-LLM-Interaction](https://github.com/WJDdidi-1/Smart-Robotic-Car-with-LLM-Interaction) | "Hey car, come here" → intent → motion, in a simulator | 31 tests, path drawn from the run |
+| [HRI_NaoHospital](https://github.com/WJDdidi-1/HRI_NaoHospital) | NAO receptionist: expression recognition, dialogue, Dijkstra routing | planner tested; robot parts need NAOqi |
+| [NetworkFinal](https://github.com/WJDdidi-1/NetworkFinal) | Traffic classification with differential privacy | results table, including the worst ε |
+| [GML-Machine-Learning-On-Graphs](https://github.com/WJDdidi-1/GML-Machine-Learning-On-Graphs) | ASL recognition from skeleton graphs (GNN) | pipeline only; no accuracy claimed |
+| [chat-web](https://github.com/WJDdidi-1/chat-web) | Small chat UI with a documented event protocol | the CORS bug it fixed is written down |
+| [TensorflowBasic](https://github.com/WJDdidi-1/TensorflowBasic) · [CPS](https://github.com/WJDdidi-1/CPS) · [Tips-for-Github](https://github.com/WJDdidi-1/Tips-for-Github) | Notes: TensorFlow basics, LTL specs, Git commands | cheat sheets, not tutorials |
 
 <sub>Tools above are MIT / Apache-2.0. Issues and pull requests are welcome.</sub>
