@@ -53,4 +53,4 @@ Public, and each README separates what runs from what was never finished:
 | [chat-web](https://github.com/WJDdidi-1/chat-web) | Small chat UI with a documented event protocol | the CORS bug it fixed is written down |
 | [TensorflowBasic](https://github.com/WJDdidi-1/TensorflowBasic) · [CPS](https://github.com/WJDdidi-1/CPS) · [Tips-for-Github](https://github.com/WJDdidi-1/Tips-for-Github) | Notes: TensorFlow basics, LTL specs, Git commands | cheat sheets, not tutorials |
 
-<sub>Tools above are Apache-2.0 / Apache-2.0. Issues and pull requests are welcome.</sub>
+<sub>Everything here is Apache-2.0. Issues and pull requests are welcome.</sub>
