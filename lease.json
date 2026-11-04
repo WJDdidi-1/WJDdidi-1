@@ -7,6 +7,7 @@
     "WJDdidi-1/dsh-plugin-example"
   ],
   "acquired_at": "2026-11-04T11:06:50.109619+00:00",
-  "held_until": "2026-11-04T15:06:50.109619+00:00",
-  "note": "took over a stale lease from run-8ad904fda8: that run is finished"
+  "held_until": "2026-11-04T15:11:44.939227+00:00",
+  "note": "took over a stale lease from run-8ad904fda8: that run is finished",
+  "renewed_at": "2026-11-04T11:11:44.939227+00:00"
 }
