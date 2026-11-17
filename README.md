@@ -1,56 +1,48 @@
-### Hi, I'm WJDdidi-1.
+# Less yak shaving. More things that work.
 
-I build small, sharp tools for people who run coding agents — the kind of tools that
-answer one question well instead of five questions badly.
+An agent can write a thousand lines before lunch. Cool. Did anyone need them?
 
-**中文**：我做一些「小而准」的工具，主要解决智能体（AI coding agent）上下文与插件
-生态里的具体问题。下面每个项目都写清了「现在能跑什么、还没做什么」。
+That's the question I keep coming back to — in coding tools, automation, and robots that eventually have to deal with the real world.
 
----
+### A few hills I'll die on
 
-## What I'm working on
+**Context is a budget. Spend it like it's yours.**  
+Dumping the whole repo into a model isn't a strategy. It's a very expensive way to say “good luck, bestie.”
 
-| Project | What it does | Why it exists |
-| --- | --- | --- |
-| **[ai-context-doctor](https://github.com/WJDdidi-1/ai-context-doctor)** <br>`npx ai-context-doctor` | Tells you which files in a repo would flood your agent's context, and writes the ignore rules that stop it. Ships a DeepSeek Harness panel (`dsh-aiignore`). | Agents read a 40 KB lockfile once and pay for it in every turn after. |
-| **[dsh-plugin-toolkit](https://github.com/WJDdidi-1/dsh-plugin-toolkit)** <br>`npx dsh-plugin-toolkit verify .` | Preflight for DeepSeek Harness plugins: pack the tarball, install it, import the entry the loader mounts, mount the panel — before you tag a release. Also `init`, `dev`, `release`. | A plugin can install cleanly and still do nothing. I shipped five of those bugs; the checks now catch all five. |
-| **[dsh-plugin-example](https://github.com/WJDdidi-1/dsh-plugin-example)** | A ~70-line plugin you can read in one sitting and copy. | Every plugin tutorial starts with a 400-line skeleton. |
+**The best feature might be a deleted feature.**  
+If a tool quietly fixes the annoying part and gets out of the way, that's a W. Every background job does not need its own dashboard cinematic universe.
+
+**Autonomy needs boundaries.**  
+Give an agent a clear goal, a way to check its work, and a stopping point. “Keep improving” is how you wake up to six abstractions and a settings page nobody asked for.
+
+**Ship small. Bring receipts.**  
+A demo gets attention. A reproducible result earns trust. If it only works on my machine, the plot is still developing.
+
+**Reality gets the final code review.**  
+A robot doesn't care how convincing the explanation sounds. Neither does a broken install. Measure what happened, learn from the failure, try again.
+
+### Turning those takes into tools
+
+| Rabbit hole | Something to try |
+| --- | --- |
+| Agents eating context like it's an all-you-can-eat buffet | [**ai-context-doctor**](https://github.com/WJDdidi-1/ai-context-doctor) — find context-heavy files and generate ignore rules. |
+| Plugins that install successfully and then do absolutely nothing | [**dsh-plugin-toolkit**](https://github.com/WJDdidi-1/dsh-plugin-toolkit) — check the package and loader path before release day becomes debugging day. |
+| Tutorials that need a tutorial | [**dsh-plugin-example**](https://github.com/WJDdidi-1/dsh-plugin-example) — a small plugin to read, copy, and mess with. |
 
 ```sh
-npx ai-context-doctor --json          # what would flood the context
-npx dsh-plugin-toolkit verify .       # will this plugin actually install?
+npx ai-context-doctor --json
+npx dsh-plugin-toolkit verify .
 ```
 
----
+### Still curious, still tinkering
 
-## How I work
+Language becoming action. Humans staying in the loop. Systems that know when to stop.  
+The interesting bit is where a neat idea meets a messy constraint.
 
-- **Every claim has a check behind it.** If a README says "tested", there is a test
-  file you can run; if it says "works with X", CI runs X.
-- **Write down the failure.** [Five plugins that installed and did nothing](https://github.com/WJDdidi-1/dsh-plugin-toolkit/blob/main/docs/why-it-exists.md)
-  documents five real bugs — the exact error text, the root cause, and the check that
-  catches each one now. Two of those were mine.
-- **Say what is not built yet.** The READMEs separate *what runs today* from *what is
-  planned*, because a README that promises more than the code is the most expensive
-  kind of debt.
+Some earlier rabbit holes: [language-guided robot simulation](https://github.com/WJDdidi-1/Smart-Robotic-Car-with-LLM-Interaction), [human–robot interaction](https://github.com/WJDdidi-1/HRI_NaoHospital), and [learning on graphs](https://github.com/WJDdidi-1/GML-Machine-Learning-On-Graphs). Check each repo for what actually runs.
 
 ---
 
-## Elsewhere
+Got a reproducible bug, a simpler approach, or a take worth challenging? Open an issue. I'm listening.
 
-- Personal site: **[wjddidi-1.github.io](https://wjddidi-1.github.io)**
-
-## Coursework and older projects
-
-Public, and each README separates what runs from what was never finished:
-
-| Project | What it is | State |
-| --- | --- | --- |
-| [Smart-Robotic-Car-with-LLM-Interaction](https://github.com/WJDdidi-1/Smart-Robotic-Car-with-LLM-Interaction) | "Hey car, come here" → intent → motion, in a simulator | 31 tests, path drawn from the run |
-| [HRI_NaoHospital](https://github.com/WJDdidi-1/HRI_NaoHospital) | NAO receptionist: expression recognition, dialogue, Dijkstra routing | planner tested; robot parts need NAOqi |
-| [NetworkFinal](https://github.com/WJDdidi-1/NetworkFinal) | Traffic classification with differential privacy | results table, including the worst ε |
-| [GML-Machine-Learning-On-Graphs](https://github.com/WJDdidi-1/GML-Machine-Learning-On-Graphs) | ASL recognition from skeleton graphs (GNN) | pipeline only; no accuracy claimed |
-| [chat-web](https://github.com/WJDdidi-1/chat-web) | Small chat UI with a documented event protocol | the CORS bug it fixed is written down |
-| [TensorflowBasic](https://github.com/WJDdidi-1/TensorflowBasic) · [CPS](https://github.com/WJDdidi-1/CPS) · [Tips-for-Github](https://github.com/WJDdidi-1/Tips-for-Github) | Notes: TensorFlow basics, LTL specs, Git commands | cheat sheets, not tutorials |
-
-<sub>Everything here is Apache-2.0. Issues and pull requests are welcome.</sub>
+[Elsewhere on the web ↗](https://wjddidi-1.github.io)
