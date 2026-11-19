@@ -1,13 +1,6 @@
 {
   "agent": "dsh-lab",
   "run_id": "run-f2e2a406a0",
-  "projects": [
-    "WJDdidi-1/ai-context-doctor",
-    "WJDdidi-1/dsh-plugin-toolkit",
-    "WJDdidi-1/dsh-plugin-example"
-  ],
-  "acquired_at": "2026-11-19T17:02:37.396733+00:00",
-  "held_until": "2026-11-20T00:09:52.610563+00:00",
-  "note": "",
-  "renewed_at": "2026-11-19T20:09:52.610563+00:00"
+  "projects": [],
+  "released_at": "2026-11-19T20:17:13.448612+00:00"
 }
